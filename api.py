@@ -19,8 +19,8 @@ def make_app():
         (r"/v1/delcustomer", DelHandler, dict(customers = customers)),
         (r"/v1/getcustomer", GetHandler, dict(customers = customers)),
         ])
-#This is the deamon that listens on port 8888 for http requests
+#This is the deamon that listens on port 8080 for http requests
 if __name__ == "__main__":
     app = make_app()
-    app.listen(8080)
+    app.listen(8888)
     tornado.ioloop.IOLoop.current().start()
