@@ -18,10 +18,10 @@ def make_app():
         (r"/v1", MainHandler),
         (r"/v1/addcustomer", AddHandler, dict(customers = customers)),
         (r"/v1/delcustomer", DelHandler, dict(customers = customers)),
-        (r"/v1/getcustomer", GetHandler, dict(customers = customers)),
-        (r"/v1/searchcustomer", SearchHandler, dict(customers = customers)),
+        (r"/v1/getcustomers", GetHandler, dict(customers = customers)),
+         (r"/v1/searchcustomer", SearchHandler, dict(customers = customers)),
         ])
-#This is the deamon that listens on port 8080 for http requests
+#This is the deamon that listens on port 8888 for http requests
 if __name__ == "__main__":
     app = make_app()
     app.listen(8888)

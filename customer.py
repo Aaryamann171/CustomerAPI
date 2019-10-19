@@ -17,15 +17,24 @@ class Customer:
 
     def del_customer(self, name):
         found = False
-        for idx, book in enumerate(self.customers):
-            if book["name"] == name:
+        for idx, customer in enumerate(self.customers):
+            if customer["name"] == name:
                 index = idx
                 found = True
                 del self.customers[idx]
         print("customers: {0}".format(json.dumps(self.customers)))
         return found
+    def search_customer(self, name):
+        found = False
+        for idx, customer in enumerate(self.customers):
+            if customer["name"] == name:
+                index = idx
+                found = True
+                self.customers[idx]
+        print("customers: {0}".format(json.dumps(self.customers)))
+        return found
 
-    def get_all_books(self):
+    def get_all_customers(self):
         return self.customers
 
     def json_list(self):
