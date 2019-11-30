@@ -1,11 +1,11 @@
-SET PATH=%PATH%;c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32;c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\Scripts
-del C:\skillvelocity\courses\devops\PyMicroservices\Source\python_tests_xml\*.*
-del C:\skillvelocity\courses\devops\PyMicroservices\Source\coverage.xml
-cd c:\skillvelocity\courses\devops\PyMicroservices\Source
-REM c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\python runtests.py
-REM c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\python -m coverage run -m pytest && coverage xml -o coverage.xml
-REM c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\python -m coverage html -d coverage
+SET PATH=%PATH%;/usr/lib/python3.7;/usr/lib/python3.7/venv/scripts
+del /home/aryan/Desktop/python_tests_xml/*.*
+del /home/aryan/Desktop/CustomerAPI/coverage.xml
+cd /home/aryan/Desktop/CustomerAPI
+REM /usr/lib/python3.7/python runtests.py
+REM /usr/lib/python3.7/python -m coverage run -m pytest && coverage xml -o coverage.xml
+REM /usr/lib/python3.7/python -m coverage html -d coverage
 python runtests.py
 python -m coverage run -m pytest && coverage xml -o coverage.xml
-copy C:\skillvelocity\courses\devops\PyMicroservices\Source\python_tests_xml\*.* C:\skillvelocity\courses\devops\PyMicroservices\python_tests_xml
-copy C:\skillvelocity\courses\devops\PyMicroservices\Source\coverage.xml C:\skillvelocity\courses\devops\PyMicroservices
+copy /home/aryan/Desktop/CustomerAPI/ python_tests_xml\*.* /home/aryan/Desktop/python_tests_xml
+copy /home/aryan/Desktop/CustomerAPI/coverage.xml /home/aryan/Desktop/
